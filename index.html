@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>404 – Stránka nenalezena</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0F1015;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 140px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      background: #FF5470;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>404</h1>
+    <p>Stránka nenalezena</p>
+
+    <div id="lottie" style="height:200px;"></div>
+
+    <button onclick="location.href='/'">Zpět domů</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'animation.lottie'
+    });
+  </script>
+
+</body>
+</html>
