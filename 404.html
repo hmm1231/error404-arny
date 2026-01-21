@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 – Stránka nenalezena</title>
 
-  <!-- CSS přímo v HTML -->
   <style>
-    /* Základní layout */
     body {
       margin: 0;
       height: 100vh;
@@ -28,7 +26,7 @@
     }
 
     h1 {
-      font-size: 15vw; /* responsivní velikost čísla 404 */
+      font-size: 15vw;
       margin: 0;
       font-weight: bold;
     }
@@ -68,7 +66,7 @@
     }
   </style>
 
-  <!-- Lottie player pro .lottie soubory -->
+  <!-- Lottie player pro .json soubory -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
@@ -80,7 +78,7 @@
     <!-- Animace Lottie -->
     <lottie-player
       id="lottie"
-      src="./animation.lottie"
+      src="./animation.json"
       background="transparent"
       speed="1"
       loop
@@ -88,7 +86,6 @@
       Stránka načítá animaci...
     </lottie-player>
 
-    <!-- Tlačítko zpět domů -->
     <button onclick="location.href='./'">Zpět domů</button>
   </div>
 
