@@ -54,16 +54,17 @@
     <button onclick="location.href='/'">Zpět domů</button>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-  <script>
-    lottie.loadAnimation({
-      container: document.getElementById('lottie'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'animation.lottie'
-    });
-  </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<lottie-player
+  src="./animation.lottie"
+  background="transparent"
+  speed="1"
+  loop
+  autoplay
+  style="height:200px;">
+</lottie-player>
+
 
 </body>
 </html>
